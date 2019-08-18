@@ -41,7 +41,9 @@ export class TodoItem extends Component {
 }
 // propTypes
 TodoItem.propTypes={
-	todo :propTypes.object.isRequired
+	todo :propTypes.object.isRequired,
+	markComplete :propTypes.func.isRequired,
+    delTodo :propTypes.func.isRequired,
 }
 const btnStyle={
 	background:'#ff0000',
@@ -53,4 +55,5 @@ const btnStyle={
 	float:'right'
 
 }
-export default TodoItem
+
+export default TodoItem;
